@@ -1,5 +1,4 @@
 /// <reference types="chrome" />
-
 import { defineManifest } from "@crxjs/vite-plugin";
 
 export default defineManifest({
@@ -7,10 +6,21 @@ export default defineManifest({
   name: "My First Extension",
   version: "1.0.0",
 
-  // permissions: ["tabs", "storage"],
+  // permissions: ["bookmarks", "tabs", "tabGroups", "storage"],
 
   action: {
     default_popup: "index.html",
+    default_icon: {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+    },
+  },
+
+  icons: {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png",
   },
 
   background: {
