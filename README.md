@@ -1,9 +1,16 @@
 # chrome-extension-template
 
+## メモ
+
+- tsconfig.jsonでエイリアス設定を試したが、ビルドで失敗した。一旦諦める
+  - @crxjs/vite-pluginの仕様をきちんと調べられていないだけで、頑張ればできる可能性はある
+
 ## その他やりたいこと
 
 - 設定ページ
 - iconの動的変更
+- 特定のキー操作をすると起動する設定（下記の `chrome上でaを2回押した時` のイメージ）
+  - https://zenn.dev/monjara/articles/3b200fa041fbdf
 
 ## アイデア
 

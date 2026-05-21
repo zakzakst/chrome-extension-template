@@ -1,6 +1,6 @@
+import { ZipArchive } from "archiver";
 import fs from "node:fs";
 import path from "node:path";
-import { ZipArchive } from "archiver";
 
 const SOURCE_DIR = "dist";
 const TEMP_DIR = "downloads/chrome-extension";
