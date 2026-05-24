@@ -1,6 +1,7 @@
+import { useCallback } from "react";
+
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { useCallback } from "react";
 
 const App = () => {
   const handleClick = useCallback(() => {
