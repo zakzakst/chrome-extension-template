@@ -6,7 +6,20 @@ export default defineManifest({
   name: "Extension Template",
   version: "1.0.0",
 
-  // permissions: ["bookmarks", "tabs", "tabGroups", "storage"],
+  permissions: [
+    "sidePanel",
+    // "bookmarks",
+    // "tabs",
+    // "tabGroups",
+    // "storage",
+  ],
+
+  icons: {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png",
+  },
 
   action: {
     default_popup: "src/pages/popup/index.html",
@@ -16,11 +29,13 @@ export default defineManifest({
     },
   },
 
-  icons: {
-    "16": "icons/icon-16.png",
-    "32": "icons/icon-32.png",
-    "48": "icons/icon-48.png",
-    "128": "icons/icon-128.png",
+  side_panel: {
+    default_path: "src/pages/side-panel/index.html",
+  },
+
+  options_ui: {
+    page: "src/pages/options/index.html",
+    open_in_tab: true,
   },
 
   background: {
@@ -34,9 +49,4 @@ export default defineManifest({
       js: ["src/content.ts"],
     },
   ],
-
-  options_ui: {
-    page: "src/pages/options/index.html",
-    open_in_tab: true,
-  },
 });
