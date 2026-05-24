@@ -1,7 +1,18 @@
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+import { useCallback } from "react";
+
 const App = () => {
+  const handleClick = useCallback(() => {
+    toast("ボタンクリック");
+  }, []);
+
   return (
     <div className="p-4">
       <h1>サイドパネル</h1>
+      <div>
+        <Button onClick={handleClick}>ボタン</Button>
+      </div>
     </div>
   );
 };
