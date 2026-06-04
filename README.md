@@ -59,3 +59,18 @@ type GoodData = {
 ```
 
 - プロンプトを書く際、ライブラリ連携どう指定するか？今回はやらなかったshadcnなど、特有の記述方法がある場合にどのようにすれば上手くいくのか？
+
+## タグ付けの方法
+
+- git tag v0.0.0
+  - タグが付与される
+- git tag
+  - タグを確認できる
+- git show v0.0.0
+  - v0.0.0を見れる
+- git push origin --tag v0.0.0
+  - v0.0.0をリモートリポジトリにpushする
+- git push origin --tags
+  - ローカルにあるタグ全てをリモートリポジトリにpushする
+- git ls-remote --tags origin
+  - リモートリポジトリのタグを確認する
