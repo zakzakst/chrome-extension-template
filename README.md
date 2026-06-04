@@ -74,3 +74,7 @@ type GoodData = {
   - ローカルにあるタグ全てをリモートリポジトリにpushする
 - git ls-remote --tags origin
   - リモートリポジトリのタグを確認する
+- git tag -d v0.0.0
+  - v0.0.0を削除
+- git push origin --delete v0.0.0
+  - リモートリポジトリのv0.0.0を削除（ローカルとリモートリポジトリでは別操作になる）
