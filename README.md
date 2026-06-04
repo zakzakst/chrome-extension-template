@@ -64,6 +64,8 @@ type GoodData = {
 
 - git tag v0.0.0
   - タグが付与される
+- git tag -a v0.0.0 -m "Release version 0.0.0"
+  - メッセージ付きでタグを付与
 - git tag
   - タグを確認できる
 - git show v0.0.0
