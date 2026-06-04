@@ -68,7 +68,7 @@ type GoodData = {
   - タグを確認できる
 - git show v0.0.0
   - v0.0.0を見れる
-- git push origin --tag v0.0.0
+- git push origin v0.0.0
   - v0.0.0をリモートリポジトリにpushする
 - git push origin --tags
   - ローカルにあるタグ全てをリモートリポジトリにpushする
